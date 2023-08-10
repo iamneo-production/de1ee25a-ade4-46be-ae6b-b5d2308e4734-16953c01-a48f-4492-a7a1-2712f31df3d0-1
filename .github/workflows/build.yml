@@ -43,7 +43,7 @@ jobs:
 
           API_PAYLOAD="{ \"repo_id\": \"$REPO_NAME\", \"branch_name\":
           \"$BRANCH_NAME\", \"github_username\": \"$GITHUB_USERNAME\",
-          \"api_secret"\: \$API_SECRET\}"
+          \"api_secret"\: \"$API_SECRET\"}"
 
           curl -X POST -H "Content-Type: application/json" -d "$API_PAYLOAD"
           $API_URL
